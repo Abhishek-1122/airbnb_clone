@@ -1,0 +1,321 @@
+
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       .outer{
+        border-bottom: 1px solid lightgray;
+       }
+       .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin:20px 50px;
+        
+       }
+       .logo{
+        width: 115px;
+        height: 35px;
+        
+       }
+       .btn-airbnb-home{
+        border:none;
+        width: 15%;
+        border-radius: 40px;
+        padding: 15px 20px;
+        background-color: #fcf7f7;
+        display: flex;
+        justify-content:center;
+       }
+       .btn-airbnb-home:hover{
+        background-color: lightgray;
+        
+       }
+       .btn-airbnb-signout{
+        border:1px solid lightgray;
+        border-radius: 40px;
+        padding: 12px 20px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+       }
+       .nav-search{
+        padding: 10px 10px;
+        border:1px solid lightgray;
+        width: 400px;
+        justify-content:center;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        color:gray;
+       }
+       .nav-search:hover{
+        padding: 10px 10px;
+        border:1px solid lightgray;
+        width: 400px;
+        box-shadow: 1px 1px #c6c3c3;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        color:gray;
+       }
+      
+       .search-input{
+        font-size: 16px;
+
+       }
+       .search-icon{
+        border:none;
+        padding:5px;
+        align-items: center;
+        align-content: center;
+        border:1px solid gray;
+        border-radius: 50%;
+        background-color: rgba(255, 0, 0, 0.61);
+       }
+       .search-img{
+        width: 20px;
+        height: 20px; 
+        display: flex;
+        align-items: center;
+       }
+       .signout-img{
+        width: 30px;
+        height: 30px; 
+        
+       }
+       .signout-profile{
+        width: 50px;
+        height: 30px; 
+        
+       }
+       .language-icon{
+        width: 40px;
+        height: 40px;
+       }
+       .icons{
+        overflow-x: auto; /* Add horizontal scrollbar if icons exceed screen width */
+        white-space: nowrap; /* Prevent icons from wrapping */
+        display: flex;
+        justify-content: space-between;  
+       padding:14px 60px;
+       align-items: center;
+       text-align: center;
+       color: gray;
+       }
+       .icons img{
+        padding: 10px;
+        width:25px;
+        height:25px;
+       }
+       .next{
+        padding:2px;
+        border: 1px solid gray;;
+        border-radius: 50%;
+        position: sticky;
+       }
+       .next img{
+        height:12px;
+        width:20px;
+       }
+       .prev{
+        padding:2px;
+        position: sticky;
+        border: 1px solid gray;
+        border-radius: 50%;
+        
+       }
+       .prev img{
+        height:15px;
+        width:21px;
+       }
+       .toggle-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
+        column-gap: 20px;
+        border: 1px solid lightgray;
+        border-radius: 15px;
+        width: 500px;
+        margin:10px auto;
+       }
+       .toggle-icon{
+        width: 60px;
+        height: 60px;
+       }
+       .card-header{
+        position: relative;
+       }
+       .heart-icon{
+        /* width: 25px;
+        height: 25px;
+        position: relative; */
+        position: absolute;
+        opacity: 1;
+        top: 10px;
+        right: 10px;
+        width: 40px; /* Adjust width as needed */
+        height: 30px; /* Adjust height as needed */
+    
+        
+       }
+       .icons::-webkit-scrollbar {
+        width: 0; /* Hide the scrollbar */
+    }
+       .cards{
+        width:100%;
+        border:1px solid lightgray;
+        padding:5px 5px 5px 5px;
+        border-radius: 14px;
+        margin-bottom: 20px;
+        
+       }
+       .cards:hover{
+        box-shadow: 2px 2px  rgb(211, 209, 209);;
+        
+       }
+       .card-img{
+        
+        border-radius: 10px;
+        position:relative;
+        max-width: 100%;
+        height: auto;
+        
+       }
+       .cards-container{
+        display: flex;
+        column-gap: 15px;
+        position: relative;
+        
+       }
+       
+       .show{
+        background: black;
+        color:white;
+        padding:14px 20px;
+        border-radius: 25px;
+        position: fixed;
+        align-items: center;
+        bottom:50px;
+        left:650px;
+       }
+ /* Original CSS code before media queries */
+
+/* ... (your original styles) ... */
+
+/* Media queries for responsive design */
+
+/* Tablets and larger */
+@media (max-width: 1024px) {
+    .nav {
+        margin: 20px 20px;
+    }
+    .nav-search {
+        width: 300px;
+    }
+    .nav-search:hover {
+        width: 300px;
+    }
+    .icons {
+        overflow-x: auto; /* Add horizontal scrollbar if icons exceed screen width */
+        white-space: nowrap; /* Prevent icons from wrapping */
+        text-align: center;
+        padding: 10px;
+    }
+    .icons div {
+        display: inline-block;
+        margin-right: 10px; /* Add some spacing between icons */
+        vertical-align: top; /* Align icons to the top */
+    }
+    .toggle-div {
+        width: 500px;
+        margin: 10px auto;
+    }
+    .show {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav-search:hover {
+        width: 100%;
+    }
+    .btn-airbnb-home {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .icons {
+        
+            display: flex; /* Use flexbox to arrange icons */
+            overflow-x: auto; /* Add horizontal scrollbar if icons exceed screen width */
+            white-space: nowrap; /* Prevent icons from wrapping */
+            align-items: center; /* Vertically center icons */
+            padding: 10px;
+            position: relative; /* Add relative positioning for absolute positioning of prev and next */
+        
+
+       
+    }
+    .icons .prev,
+    .icons .next {
+       display: none;
+    }
+    
+    .icons div {
+        display: inline-block;
+        margin-right: 10px; /* Add some spacing between icons */
+        vertical-align: top; /* Align icons to the top */
+    }
+    .toggle-div {
+        width: 420px;
+        
+        margin: 10px auto;
+    }
+    .toggle-icon{
+        width: 40px;
+        height: 40px;
+       }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .show {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 15px;
+    }   
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .nav {
+        margin: 10px;
+    }
+    .nav-search {
+        width: 100%;
+    }
+    .toggle-div {
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    
+    .show {
+        padding: 10px 15px;
+    }
+}
+
